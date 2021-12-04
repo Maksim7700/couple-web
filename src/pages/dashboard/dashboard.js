@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { Button, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import {fetchUserData, teste} from '../../api/authenticationService';
+import {fetchUserData} from '../../api/authenticationService';
 
 
 const MainWrapper=styled.div`
