@@ -1,16 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
     background-image: url("../photos/background-img.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 .login-page {
     width: 544px;
     height: 520px;
-    padding-top: 100px;
-    padding-left: 30%;
+    padding-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
     box-sizing: content-box;
 }
 
@@ -20,16 +19,19 @@ body {
 }
 
 .card-title {
-    font-family: Montserrat, serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 28px;
     padding-top: 99px;
     text-align: center;
+    letter-spacing: 5px;
+    margin-left: 3%;
+    margin-right: auto;
 }
 
 
 .form-div {
-    padding-top: 60px;
+    padding-top: 69px;
 }
 
 .form-input-c {
@@ -40,7 +42,7 @@ body {
 }
 
 .form-gr {
-    text-align: center;
+    padding-left: 112px;
     padding-bottom: 20px;
 }
 
@@ -51,14 +53,15 @@ body {
     transform: rotate(-0.12deg);
 }
 
-input[type="text"] {
+.form-gr input[type="text"] {
     background: transparent;
     border-width: 1px;
     border-color: black;
     padding-left: 17px;
+    -webkit-box-shadow: 0 0 0 1000px #FFAF37 inset;
 }
 
-input[type="text"]:focus {
+.form-gr input[type="text"]:focus {
     outline: none;
     background: transparent;
     border-width: 1px;
@@ -66,19 +69,21 @@ input[type="text"]:focus {
     padding-left: 17px;
 }
 
-input[type="password"] {
+.form-gr input[type="password"] {
     background: transparent;
     border-width: 1px;
     border-color: black;
     padding-left: 17px;
+    -webkit-box-shadow: 0 0 0 1000px #FFAF37 inset;
 }
 
-input[type="password"]:focus {
+.form-gr input[type="password"]:focus {
     outline: none;
     background: transparent;
     border-width: 1px;
     border-color: black;
     padding-left: 17px;
+
 }
 
 input[type="checkbox"] {
@@ -92,8 +97,8 @@ input[type="checkbox"] {
 }
 
 .roundedOne {
-    padding-left: 100px;
-    width: 50px;
+    padding-left: 0;
+    width: 0;
     background-image: url("../photos/rectangle-login.png");
     border-radius: 50px;
     position: absolute;
@@ -143,8 +148,8 @@ input[type=checkbox] {
 
 .rm-me {
     text-align: left;
-    padding-left: 120px;
-    padding-top: 3px;
+    padding-left: 20px;
+    padding-top: 4px;
     font-family: Montserrat, serif;
     float: left;
     font-size: 16px;
@@ -152,7 +157,7 @@ input[type=checkbox] {
 
 .fg-password {
     text-align: left;
-    padding-left: 62px;
+    padding-left: 40px;
     padding-top: 3px;
     font-family: Montserrat, serif;
     float: left;
@@ -168,6 +173,43 @@ input[type=checkbox] {
 #forget-password {
     font-family: Montserrat, serif;
     font-size: 16px;
+    color: white;
+}
+
+.buttons_2 {
+    position: absolute;
+    margin-top: 23px;
+    width: 100%;
+    padding-left: 152px;
+}
+
+.buttons_2 button{
+    border-radius: 20px;
+    width: 125px;
+    position: relative;
+}
+
+.buttons_2 .button_login {
+    background: black;
+    color: white;
+    border-width: 1px;
+    border-color: black;
+}
+
+.buttons_2 .button_registration {
+    margin-left: 20px;
+    background: transparent;
+    border-width: 1px;
+    border-color: black;
+}
+
+.buttons_2 .button_login:hover {
+    background: transparent;
+    color: black;
+}
+
+.buttons_2 .button_registration:hover {
+    background: black;
     color: white;
 }
 
