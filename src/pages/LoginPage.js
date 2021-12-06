@@ -2,6 +2,7 @@ import {useState} from 'react';
 import './loginpage.css';
 import {userLogin} from '../api/authenticationService';
 import {Alert} from 'react-bootstrap';
+import {useHistory} from "react-router-dom";
 
 const LoginPage = ({...props}) => {
 
@@ -56,6 +57,10 @@ const LoginPage = ({...props}) => {
     const onChangeHandle = () => {
         setError("");
     }
+    const history = useHistory();
+    const routeRegistration = () => {
+        history.push("/registration")
+    }
 
     return (
         <div className="login-page">
@@ -80,7 +85,11 @@ const LoginPage = ({...props}) => {
                                 <label htmlFor="roundedOne"></label>
                             </div>
                             <div className="rm-me">Remember me</div>
-                            <div className="fg-password"><a id="forget-password" href="/">Forget password</a></div>
+                            <div className="fg-password"><a id="forget-password" href="/">Forget password?</a></div>
+                        </div>
+                        <div className="buttons_2">
+                            <button type="submit" className="button_login">Log in</button>
+                            <button className="button_registration" onClick={routeRegistration}>Registration</button>
                         </div>
                     </form>
                 </div>

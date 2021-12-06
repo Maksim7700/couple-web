@@ -16,7 +16,7 @@ export const userLogin=(authRequest)=>{
 export const fetchUserData=(authRequest)=>{
     return axios({
         method:'GET',
-        url:`${process.env.hostUrl||'http://localhost:8080'}/api/user/info`,
+        url:`${process.env.hostUrl||'http://localhost:8080'}/api/user/about`,
         headers:{
             'Authorization':'Bearer '+getToken()
         }

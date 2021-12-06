@@ -5,7 +5,8 @@ import {
   Route,
 } from "react-router-dom";
 import  LoginPage from './pages/LoginPage';
-import { Dashboard } from './pages/dashboard/dashboard';
+import {Dashboard} from './pages/dashboard/dashboard';
+import  RegistrationPage from './pages/registration/registrationPage';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LoginPage}/>
           <Route exact path="/user" component={Dashboard}/>
+          <Route exact path="/registration" component={RegistrationPage}/>
         </Switch>
       </BrowserRouter>
   );
